@@ -15,7 +15,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "B"
     },
     "TFT8_Nasus": {
       "id": "TFT8_Nasus",
@@ -30,7 +30,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "A"
     },
     "TFT8_Jinx": {
       "id": "TFT8_Jinx",
@@ -45,7 +45,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "B"
     },
     "TFT8_Vayne": {
       "id": "TFT8_Vayne",
@@ -59,7 +59,7 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },      "mid-game": "S",      "late-game": "A"
     },
     "TFT8_Riven": {
       "id": "TFT8_Riven",
@@ -73,7 +73,8 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },
+      "mid-game": "S",      "late-game": "A"
     },
     "TFT8_MissFortune": {
       "id": "TFT8_MissFortune",
@@ -87,7 +88,7 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Janna": {
       "id": "TFT8_Janna",
@@ -101,7 +102,7 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Lux": {
       "id": "TFT8_Lux",
@@ -116,7 +117,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "S"
     },
     "TFT8_Nilah": {
       "id": "TFT8_Nilah",
@@ -130,7 +131,8 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },
+      "mid-game": "S",      "late-game": "S"
     },
     "TFT8_Kaisa": {
       "id": "TFT8_Kaisa",
@@ -144,7 +146,7 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },      "mid-game": "A",      "late-game": "A"
     },
     "TFT8_Rell": {
       "id": "TFT8_Rell",
@@ -159,7 +161,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "A"
     },
     "TFT8_Ekko": {
       "id": "TFT8_Ekko",
@@ -173,7 +175,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Syndra": {
       "id": "TFT8_Syndra",
@@ -187,7 +189,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Draven": {
       "id": "TFT8_Draven",
@@ -202,7 +204,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "A"
     },
     "TFT8_Leona": {
       "id": "TFT8_Leona",
@@ -216,7 +218,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Jax": {
       "id": "TFT8_Jax",
@@ -230,7 +232,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "mid-game": "B",      "late-game": "B"
     },
     "TFT8_Ashe": {
       "id": "TFT8_Ashe",
@@ -245,7 +247,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "A"
     },
     "TFT8_Mordekaiser": {
       "id": "TFT8_Mordekaiser",
@@ -259,7 +261,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Annie": {
       "id": "TFT8_Annie",
@@ -274,7 +276,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "S"
     },
     "TFT8_Fiora": {
       "id": "TFT8_Fiora",
@@ -289,7 +291,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "S"
     },
     "TFT8_Alistar": {
       "id": "TFT8_Alistar",
@@ -304,7 +306,7 @@
         "w": 48,
         "h": 48
       },
-      "mid-game": "S"
+      "mid-game": "S",      "late-game": "S"
     },
     "TFT8_Viego": {
       "id": "TFT8_Viego",
@@ -318,7 +320,7 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "A"
     },
     "TFT8_Kayle": {
       "id": "TFT8_Kayle",
@@ -333,7 +335,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "B"
+      "early-game": "B",      "mid-game": "B"
     },
     "TFT8_Vi": {
       "id": "TFT8_Vi",
@@ -348,7 +350,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "A"
     },
     "TFT8_Samira": {
       "id": "TFT8_Samira",
@@ -362,7 +364,7 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Sona": {
       "id": "TFT8_Sona",
@@ -376,7 +378,8 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "mid-game": "S",      "late-game": "A"
+
     },
     "TFT8_Lulu": {
       "id": "TFT8_Lulu",
@@ -391,7 +394,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "B"
+      "early-game": "B",      "mid-game": "B"
     },
     "TFT8_Nunu": {
       "id": "TFT8_Nunu",
@@ -405,7 +408,7 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Blitzcrank": {
       "id": "TFT8_Blitzcrank",
@@ -420,7 +423,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "B"
     },
     "TFT8_Camille": {
       "id": "TFT8_Camille",
@@ -435,7 +438,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "B"
     },
     "TFT8_Gangplank": {
       "id": "TFT8_Gangplank",
@@ -450,7 +453,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "A"
     },
     "TFT8_LeeSin": {
       "id": "TFT8_LeeSin",
@@ -465,7 +468,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "A"
     },
     "TFT8_Malphite": {
       "id": "TFT8_Malphite",
@@ -480,7 +483,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "B"
     },
     "TFT8_AurelionSol": {
       "id": "TFT8_AurelionSol",
@@ -494,7 +497,7 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "A"
     },
     "TFT8_Rammus": {
       "id": "TFT8_Rammus",
@@ -508,7 +511,7 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },      "mid-game": "A",      "late-game": "B"
     },
     "TFT8_Urgot": {
       "id": "TFT8_Urgot",
@@ -522,7 +525,7 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Fiddlesticks": {
       "id": "TFT8_Fiddlesticks",
@@ -552,7 +555,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "A"
     },
     "TFT8_Poppy": {
       "id": "TFT8_Poppy",
@@ -567,7 +570,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "A"
     },
     "TFT8_Renekton": {
       "id": "TFT8_Renekton",
@@ -582,7 +585,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "A"
     },
     "TFT8_WuKong": {
       "id": "TFT8_WuKong",
@@ -597,7 +600,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "B"
+      "early-game": "B",      "mid-game": "B"
     },
     "TFT8_Ezreal": {
       "id": "TFT8_Ezreal",
@@ -612,7 +615,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "A"
     },
     "TFT8_Leblanc": {
       "id": "TFT8_Leblanc",
@@ -626,7 +629,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "mid-game": "A",      "late-game": "B"
     },
     "TFT8_Pantheon": {
       "id": "TFT8_Pantheon",
@@ -641,7 +644,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "S"
     },
     "TFT8_Garen": {
       "id": "TFT8_Garen",
@@ -655,7 +658,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Jhin": {
       "id": "TFT8_Jhin",
@@ -669,7 +672,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "A"
     },
     "TFT8_Lucian": {
       "id": "TFT8_Lucian",
@@ -684,7 +687,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "S"
+      "early-game": "S",      "mid-game": "S"
     },
     "TFT8_EzrealFuture": {
       "id": "TFT8_EzrealFuture",
@@ -698,7 +701,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8b_Sivir": {
       "id": "TFT8b_Sivir",
@@ -713,7 +716,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "B"
+      "early-game": "B",      "mid-game": "B"
     },
     "TFT8_Warwick": {
       "id": "TFT8_Warwick",
@@ -727,7 +730,7 @@
         "y": 48,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Shen": {
       "id": "TFT8_Shen",
@@ -741,7 +744,8 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "mid-game": "S",      "late-game": "A"
+
     },
     "TFT8_TwistedFate": {
       "id": "TFT8_TwistedFate",
@@ -755,7 +759,7 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "S"
     },
     "TFT8_Neeko": {
       "id": "TFT8_Neeko",
@@ -769,7 +773,7 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "A"
     },
     "TFT8_Vex": {
       "id": "TFT8_Vex",
@@ -783,7 +787,7 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "mid-game": "S",      "late-game": "A"
     },
     "TFT8_Pyke": {
       "id": "TFT8_Pyke",
@@ -798,7 +802,7 @@
         "w": 48,
         "h": 48
       },
-      "early-game": "A"
+      "early-game": "A",      "mid-game": "B"
     },
     "TFT8_Morgana": {
       "id": "TFT8_Morgana",
@@ -812,7 +816,7 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "mid-game": "A",      "late-game": "B"
     },
     "TFT8_Aatrox": {
       "id": "TFT8_Aatrox",
@@ -826,7 +830,7 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "A"
     },
     "TFT8_GnarBig": {
       "id": "TFT8_GnarBig",
@@ -840,7 +844,8 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },
+      "mid-game": "S",      "late-game": "A"
     },
     "TFT8_BelVeth": {
       "id": "TFT8_BelVeth",
@@ -854,7 +859,7 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },      "late-game": "A"
     }
   }
 }
