@@ -3,14 +3,32 @@ import React from "react";
 import "./Page.css";
 import ChampionTier from "./ChampionTier";
 import { useState } from "react";
-import ChampionNames from "./ChampionNames";
+import ChampionRender from "./ChampionRender";
+import champions from '../assets/tft-champs.json';
+import { Champion } from "./ChampionTier";
 
 const Page = () => {
     const [stage, setStage] = useState("");
+    const [search, setSearch] = useState("");
+    const [filteredChampions, setFilteredChampions] = useState<Champion[]>([]);
 
     const handleStageChange = (stage: string) => {
         setStage(stage);
     };
+
+    const getFilteredChampions = () => {
+        return Object.values(champions.data)
+          .filter((champion) =>
+            champion.name.toLowerCase().includes(search.toLowerCase())
+          );
+      };
+
+    const handleSearch : React.ChangeEventHandler<HTMLInputElement> = (e) => {
+        setSearch(e.target.value);
+        setFilteredChampions(getFilteredChampions());
+        console.log(search);
+        console.log(filteredChampions);
+    }
 
     const stageFiltering = (stage: string) => {
         switch (stage) {
@@ -54,6 +72,7 @@ const Page = () => {
             <div className="page-header">
                 <h1>TFT TIER LIST</h1>
                 <h2>Set 8.5</h2>
+                <h3>{search}</h3>
             </div>
             <div className="page-body">
                 <div className="page-filter">
@@ -95,12 +114,27 @@ const Page = () => {
                         </div>
                     </div>
                     <div className="search-filter">
-    <input list="champion-names" placeholder="Champion"/>  
-  <ChampionNames />
-                    </div>
+                        {/* <input type='text' placeholder="Champion" onChange={(e) => setSearch(e.target.value)}></input> */}
+                        {/* <input list="champion-names" placeholder="Champion" onChange={(e) => setSearch(e.target.value)}/> */}
+                        {/* <datalist id="champion-names"> getChampionNames() </datalist> */}
+                        <input
+              list="champion-names"
+              placeholder="Champion"
+              onChange={(e) => {handleSearch(e)}}
+            />
+            <datalist id="champion-names">
+            {filteredChampions.map((champion) => (
+                <option value={champion.name}/>
+            ))}
+            </datalist>
+                </div>
                 </div>
                 <div className="page-content">
-                {stageFiltering(stage)}
+                {/* if search is empty, then stageFiltering, otherwise searched champion*/}
+                {search === '' ? stageFiltering(stage) : 
+                filteredChampions.map((champion) => (
+                    <ChampionRender champion={champion}/>
+                ))}
                 </div>
             </div>
         </div>

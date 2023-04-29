@@ -1,16 +1,22 @@
 import React from 'react'
 import champions from "../assets/tft-champs.json";
 
-const ChampionNames = () => {
+interface ChampionNameProps {
+    searchedName: string;
+}
+
+const ChampionNames = ({searchedName}: ChampionNameProps) => {
 
     const getChampionNames = () => {
-        return Object.values(champions.data).map((champion) => (
-            <option key={champion.id} value={champion.name}>{champion.name}</option>
+        return Object.values(champions.data)
+        .filter((champion) => champion.name.toLowerCase().includes(searchedName.toLowerCase()))
+        .map((champion) => (
+            <option value={champion.name}/>
         ))
     }
 
   return (
-    <datalist id="champion-names">{getChampionNames()}</datalist>
+      <datalist id="champion-names"> {getChampionNames()} </datalist>
   )
 }
 
