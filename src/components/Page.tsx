@@ -1,5 +1,6 @@
 import React from 'react'
 import './Page.css'
+import ChampionTier from './ChampionTier'
 
 const Page = () => {
   return (
@@ -21,13 +22,13 @@ const Page = () => {
             </div>
             <div className="page-tierlist">
                 <div className="page-tierlist-early" id='early'>
-                    <h1>Hello</h1>
+                    <ChampionTier selectedStage={'early-game'}/>
                 </div>
                 <div className="page-tierlist-mid">
-                    
+                <ChampionTier selectedStage={'mid-game'}/>
                 </div>
                 <div className="page-tierlist-late">
-                    
+                <ChampionTier selectedStage={'late-game'}/>
                 </div>
             </div>
         </div>
