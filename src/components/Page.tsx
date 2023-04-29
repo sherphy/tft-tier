@@ -2,9 +2,9 @@
 import React from "react";
 import "./Page.css";
 import ChampionTier from "./ChampionTier";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ChampionRender from "./ChampionRender";
-import champions from '../assets/tft-champs.json';
+import champions from "../assets/tft-champs.json";
 import { Champion } from "./ChampionTier";
 
 const Page = () => {
@@ -12,23 +12,21 @@ const Page = () => {
     const [search, setSearch] = useState("");
     const [filteredChampions, setFilteredChampions] = useState<Champion[]>([]);
 
+    //for the different stages
     const handleStageChange = (stage: string) => {
         setStage(stage);
     };
-
+    
     const getFilteredChampions = () => {
-        return Object.values(champions.data)
-          .filter((champion) =>
+        return Object.values(champions.data).filter((champion) =>
             champion.name.toLowerCase().includes(search.toLowerCase())
-          );
-      };
+        );
+    };
 
-    const handleSearch : React.ChangeEventHandler<HTMLInputElement> = (e) => {
+    const handleSearch: React.ChangeEventHandler<HTMLInputElement> = (e) => {
         setSearch(e.target.value);
         setFilteredChampions(getFilteredChampions());
-        console.log(search);
-        console.log(filteredChampions);
-    }
+    };
 
     const stageFiltering = (stage: string) => {
         switch (stage) {
@@ -72,7 +70,6 @@ const Page = () => {
             <div className="page-header">
                 <h1>TFT TIER LIST</h1>
                 <h2>Set 8.5</h2>
-                <h3>{search}</h3>
             </div>
             <div className="page-body">
                 <div className="page-filter">
@@ -118,23 +115,49 @@ const Page = () => {
                         {/* <input list="champion-names" placeholder="Champion" onChange={(e) => setSearch(e.target.value)}/> */}
                         {/* <datalist id="champion-names"> getChampionNames() </datalist> */}
                         <input
-              list="champion-names"
-              placeholder="Champion"
-              onChange={(e) => {handleSearch(e)}}
-            />
-            <datalist id="champion-names">
-            {filteredChampions.map((champion) => (
-                <option value={champion.name}/>
-            ))}
-            </datalist>
-                </div>
+                            list="champion-names"
+                            placeholder="Champion"
+                            onChange={(e) => {
+                                handleSearch(e);
+                            }}
+                        />
+                        <datalist id="champion-names">
+                            {filteredChampions.map((champion) => (
+                                <option value={champion.name} onSelect={(e) => setSearch((e.target as HTMLInputElement).value)}/>
+                            ))}
+                        </datalist>
+                    </div>
                 </div>
                 <div className="page-content">
-                {/* if search is empty, then stageFiltering, otherwise searched champion*/}
-                {search === '' ? stageFiltering(stage) : 
-                filteredChampions.map((champion) => (
-                    <ChampionRender champion={champion}/>
-                ))}
+                    {/* if search is empty, then stageFiltering, otherwise searched champion*/}
+                    {search === ""
+                        ? stageFiltering(stage)
+                        : filteredChampions.map((champion) => (
+                            <div className="searched-champion-parent">
+                            <div className="searched-champion-results">
+                                <div className="searched-champion-icon">
+                                    <ChampionRender champion={champion} />
+                                </div>
+                                <div className="searched-champion-details">
+                                    {!champion["early-game"] ? (
+                                        ""
+                                    ) : (
+                                        <h3>Early game: {champion["early-game"]}</h3>
+                                    )}
+                                     {!champion["mid-game"] ? (
+                                        ""
+                                    ) : (
+                                        <h3>Mid game: {champion["mid-game"]}</h3>
+                                    )}
+                                     {!champion["late-game"] ? (
+                                        ""
+                                    ) : (
+                                        <h3>Late game: {champion["late-game"]}</h3>
+                                    )}
+                                </div>
+                            </div>
+                            </div>
+                        ))}
                 </div>
             </div>
         </div>
