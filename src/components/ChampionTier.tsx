@@ -16,16 +16,37 @@ interface Champion {
 const ChampionTier = ({ selectedStage }: { selectedStage: string }) => {
     
     const tiering = () => {
-        return Object.values(champions.data)
+        const acc: { [tier: string]: Champion[] } = Object.values(champions.data)
+        //if the stage is whatever it is
         .filter((champion: Champion) => champion[selectedStage])
+        //sort by tier
         .sort((a: Champion, b: Champion) => {
-            const tierOrder: {[selectedStage: string]: number} = { S: 3, A: 2, B: 1 };
-            return tierOrder[b[selectedStage]] - tierOrder[a[selectedStage]];
+          const tierOrder: { [tier: string]: number } = { S: 3, A: 2, B: 1 };
+          return tierOrder[b[selectedStage]] - tierOrder[a[selectedStage]];
         })
-        .map((champion: Champion) => <div key={champion.id}>
-            <h1>{champion.name}</h1>
-            </div>);
-    }
+        //put the ones in the same tier together
+        .reduce((acc: { [tier: string]: Champion[] }, champion: Champion) => {
+          const tier = champion[selectedStage];
+          if (!acc[tier]) {
+            acc[tier] = [];
+          }
+          acc[tier].push(champion);
+          console.log(acc);
+          return acc;
+        }, {});
+  
+
+        return Object.keys(acc).map((tier: string) => (
+            <div key={tier}>
+              <h2>{tier}</h2>
+              {acc[tier].map((champion: Champion) => (
+                <div key={champion.id}>
+                  <h3>{champion.name}</h3>
+                </div>
+              ))}
+            </div>
+          ));
+        };
 
     return (
         <div className='champion-tiered'>
