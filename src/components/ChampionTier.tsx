@@ -27,6 +27,8 @@ const ChampionTier = ({ selectedStage }: { selectedStage: string }) => {
         //put the ones in the same tier together
         .reduce((acc: { [tier: string]: Champion[] }, champion: Champion) => {
           const tier = champion[selectedStage];
+          //if the tier alphabet doesnt exist
+          //initialise it with empty array
           if (!acc[tier]) {
             acc[tier] = [];
           }
@@ -39,11 +41,14 @@ const ChampionTier = ({ selectedStage }: { selectedStage: string }) => {
         return Object.keys(acc).map((tier: string) => (
             <div key={tier}>
               <h2>{tier}</h2>
-              {acc[tier].map((champion: Champion) => (
+              {acc[tier].map((champion: Champion) => {
+                const imageName = `TFT8_${champion.name}.TFT_Set8.png`;
+                return (
                 <div key={champion.id}>
                   <h3>{champion.name}</h3>
+                  <img src={require(`../assets/img/${imageName}`)} alt={`${champion.name} icon`}></img>
                 </div>
-              ))}
+              )})}
             </div>
           ));
         };

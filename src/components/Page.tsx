@@ -1,6 +1,6 @@
-import React from 'react'
-import './Page.css'
-import ChampionTier from './ChampionTier'
+import React from 'react';
+import './Page.css';
+import ChampionTier from './ChampionTier';
 
 const Page = () => {
   return (
