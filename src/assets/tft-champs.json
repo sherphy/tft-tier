@@ -303,7 +303,8 @@
         "y": 96,
         "w": 48,
         "h": 48
-      }
+      },
+      "mid-game": "S"
     },
     "TFT8_Viego": {
       "id": "TFT8_Viego",
@@ -535,7 +536,8 @@
         "y": 0,
         "w": 48,
         "h": 48
-      }
+      },
+      "late-game": "S"
     },
     "TFT8_Yasuo": {
       "id": "TFT8_Yasuo",

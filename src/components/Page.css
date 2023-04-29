@@ -1,32 +1,87 @@
+.page-container {
+  height: 100%;
+  min-height: 100vh;
+  background-color: gray;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-filter {
+  display: flex;
+  justify-content: center;
+}
+
 .drop-menu {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-  .stage-filter {
-    position: relative;
-    display: inline-block;
-  }
+.stage-filter {
+  position: relative;
+  display: inline-block;
+}
 
-  .stages {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+.stages {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-  .stages a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+.stages a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-  .stages a:hover {background-color: #ddd;}
-.stage-filter:hover .stages {display: block;}
-.stage-filter:hover .drop-menu {background-color: #3e8e41;}
+.stages a:hover {
+  background-color: #ddd;
+}
+.stage-filter:hover .stages {
+  display: block;
+}
+.stage-filter:hover .drop-menu {
+  background-color: #3e8e41;
+}
+
+.page-tierlist {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  margin: 2em;
+}
+
+.champion-tiers > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.champion-renders {
+  text-align: center;
+}
+
+
+img {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  margin: 1em;
+  margin-top: 0em;
+  margin-bottom: 0;
+}
+
+.champion-name {
+  margin-top: 0;
+}

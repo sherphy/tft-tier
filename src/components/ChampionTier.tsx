@@ -39,16 +39,18 @@ const ChampionTier = ({ selectedStage }: { selectedStage: string }) => {
   
 
         return Object.keys(acc).map((tier: string) => (
+            <div className="champion-tiers">
             <div key={tier}>
               <h2>{tier}</h2>
               {acc[tier].map((champion: Champion) => {
                 const imageName = `TFT8_${champion.name}.TFT_Set8.png`;
                 return (
-                <div key={champion.id}>
-                  <h3>{champion.name}</h3>
+                <div key={champion.id} className='champion-renders'>
                   <img src={require(`../assets/img/${imageName}`)} alt={`${champion.name} icon`}></img>
+                  <h3 className='champion-name'>{champion.name}</h3>
                 </div>
               )})}
+            </div>
             </div>
           ));
         };
