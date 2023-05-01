@@ -1,5 +1,4 @@
-import React from "react";
-import champions from "../assets/tft-champs.json";
+import champions from "./tft-champs.json";
 import ChampionRender from "./ChampionRender";
 
 export interface Champion {
@@ -42,7 +41,7 @@ const ChampionTier = ({ selectedStage }: { selectedStage: string }) => {
           <div className="tier-render">
             <img
               className="tier-alphabet"
-              src={require(`../assets/${tier}.png`)}
+              src={`../assets/${tier}.png`}
               alt="tier"
             ></img>
           </div>

@@ -1,5 +1,4 @@
-import React from 'react'
-import champions from "../assets/tft-champs.json";
+import champions from "./tft-champs.json";
 
 interface ChampionNameProps {
     searchedName: string;

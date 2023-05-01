@@ -1,11 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
 import "./Page.css";
 import ChampionTier from "./ChampionTier";
 import { useState, useEffect } from "react";
 import ChampionRender from "./ChampionRender";
-import champions from "../assets/tft-champs.json";
+import champions from "./tft-champs.json";
 import { Champion } from "./ChampionTier";
 
 const Page = () => {

@@ -1,6 +1,6 @@
 @font-face {
   font-family: league;
-  src: url('../assets/Friz\ Quadrata\ Regular.ttf');
+  src: url('../../public/assets/Friz\ Quadrata\ Regular.ttf');
 }
 
 .page-container {

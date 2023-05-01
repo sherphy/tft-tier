@@ -1,4 +1,3 @@
-import React from 'react'
 import { Champion } from "./ChampionTier"
 
 const ChampionRender = ({ champion }: { champion: Champion }) => {
@@ -7,7 +6,7 @@ const ChampionRender = ({ champion }: { champion: Champion }) => {
       <div key={champion.id} className="champion-renders">
         <img
           className="champion-icon"
-          src={require(`../assets/img/${imageName}`)}
+          src={`../assets/img/${imageName}`}
           alt={`${champion.name} icon`}
         />
         <h3 className="champion-name">{champion.name}</h3>
