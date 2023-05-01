@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 import ChampionRender from "./ChampionRender";
 import champions from "../assets/tft-champs.json";
 import { Champion } from "./ChampionTier";
-import tftlogo from '../assets/tftlogo.png';
 
 const Page = () => {
     const [stage, setStage] = useState("");
