@@ -1,3 +1,8 @@
+@font-face {
+  font-family: league;
+  src: url('../assets/Friz\ Quadrata\ Regular.ttf');
+}
+
 .page-container {
   height: 100%;
   min-height: 100vh;
@@ -9,11 +14,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #b1b1b36a;
+  margin-bottom: 20px;
+  font-family: league;
+  color: whitesmoke;
+}
+
+.page-header h1 {
+  margin-bottom: 0;
 }
 
 .page-filter {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: -20px;
+  align-content: center;
 }
 
 .drop-menu {
@@ -53,6 +68,11 @@
 }
 .stage-filter:hover .drop-menu {
   background-color: #696c69;
+}
+
+.search-filter {
+  align-items: center;
+  display: flex;
 }
 
 .page-tierlist {

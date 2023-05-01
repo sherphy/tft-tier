@@ -3,3 +3,5 @@ next time remember to make a types.ts
 search bar change is 1 letter late 
 
 clear champion
+when click stage, can clear champion automatically
+colours for diff tier
