@@ -1,4 +1,5 @@
 import { Champion } from "./ChampionTier"
+import React from 'react';
 
 const ChampionRender = ({ champion }: { champion: Champion }) => {
     const imageName = `TFT8_${champion.name}.TFT_Set8.png`;

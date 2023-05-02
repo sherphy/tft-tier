@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Page.css";
+import React from 'react';
 import ChampionTier from "./ChampionTier";
 import { useState, useEffect } from "react";
 import ChampionRender from "./ChampionRender";
@@ -30,7 +31,7 @@ const Page = () => {
     //because getFilteredChampions called immediately after search
     useEffect(() => {
         setFilteredChampions(getFilteredChampions());
-      }, [getFilteredChampions]);
+      }, [search, champions]);
 
     const stageFiltering = (stage: string) => {
         switch (stage) {

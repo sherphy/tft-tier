@@ -1,5 +1,6 @@
 import champions from "./tft-champs.json";
 import ChampionRender from "./ChampionRender";
+import React from 'react';
 
 export interface Champion {
   id: string;
